@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<style>
+	
+	@font-face {
+		font-family: SoftMarshmallow;
+		src: url(fonts/SoftMarshmallow.woff2);
+		src: url(fonts/SoftMarshmallow.woff);
+		
+	}
+
+	div {
+		font-family: SoftMarshmallow; font-size: 22px;
+	}
+	
+	body{	
+		width: 400px;
+		height: 400px;
+		background-image: url("SB1.png");
+		background-size: 100%;
+	}
+	input{
+		font-size: 30px; font-family: SoftMarshmallow; color: white; background-color:transparent; outline:none; text-decoration: none; border: none;
+		
+	}
+	
+	.btn {
+		-webkit-border-radius: 16px;
+		-moz-border-radius: 16px;
+		border-radius: 10px;
+		padding: 12px 25px;
+		text-align: center;
+		font-size: 18px;
+		text-decoration: none;
+	}
+	
+	.btn.green {
+		background-color: #ffffff;
+		color: #434343;
+	}
+	.btn.green:hover {
+		background-color: #d9d9d9;
+		color: #434343;
+	}
+	.btn.red {
+		background-color: #ffffff;
+		color: #434343;
+	}
+	.btn.red:hover {
+		background-color: #d9d9d9;
+		color: #434343;
+	}
+	.btn.not-active {
+		background-color: #F0F0F0;
+		color: #BDC4BF;
+		cursor: default;
+	}
+
+	
+	</style>
+</head>
+
+<body>
+	<br><br><br><br><br><br>><br><br><br><br>
+            <div  class="timer-wrap" align="center">
+				<div class="prompt">
+					<span id="question">How long would you like to study for?</span>
+				</div>
+				<br>
+                <div class="time" >
+					<div><input type="text" size="2" maxlength="2" value="00" id="hh"><span>Hour(s)</span></div>
+				
+                    <div><input type="text" size="2" maxlength="2" value="00" id="mm"><span>Minute(s)</span></div>
+					
+                    <div><input type="text" size="2" maxlength="2" value="00" id="ss"><span>Second(s)</span></div>
+                </div>
+				<br>
+            </div>
+			<br>
+            <div class="action">
+                <div class="action-item" align="center">
+                    <a href="#" id="start" class="btn green" >Start</a>
+					<a style="color: transparent" >____</a>
+					<a href="#" id="pause" class="btn not-active">Stop</a>
+                </div>
+            </div>
+
+    <!-- JS -->
+    <script src="js/jquery.1.11.2.min.js"></script>
+    <script src="timer.js"></script>
+	
+
+</body>
+
+</html>
